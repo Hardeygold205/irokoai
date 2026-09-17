@@ -1,0 +1,211 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-space-grotesk);
+  --font-geist: var(--font-geist);
+
+  /* ===========================
+     COLORS
+  =========================== */
+
+  --color-background: #f9f9f9;
+  --color-primary: #123b27;
+  --color-light: #b3c03e;
+  --color-secondary: #d5ec07;
+  --color-secondary-light: #8d9545;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-soft-black: #0d0d0d;
+
+  --color-primary-light: #206542;
+
+  --color-accent-dark: #c34e27;
+
+  --color-heading: #222222;
+  --color-body: #4b4b4b;
+  --color-muted: #888888;
+
+  --color-border: #e5e5e5;
+
+  --color-light-transparent: #d9623b1a;
+
+  /* ===========================
+     TYPOGRAPHY
+  =========================== */
+  --text-display: 100px;
+  --text-hero: 80px;
+  --text-h1: 64px;
+  --text-h2: 48px;
+  --text-h3: 32px;
+  --text-h4: 28px;
+  --text-h5: 22px;
+
+  --text-lg: 20px;
+  --text-base: 16px;
+  --text-sm: 14px;
+  --text-xs: 12px;
+
+  /* ===========================
+     LINE HEIGHT
+  =========================== */
+
+  --leading-display: 100px;
+  --leading-hero: 90px;
+  --leading-heading: 1.1;
+  --leading-body: 1.6;
+  --leading-tight: 1;
+
+  /* ===========================
+     LETTER SPACING
+  =========================== */
+
+  --tracking-display: -5px;
+  --tracking-hero: -3px;
+  --tracking-heading: -2px;
+  --tracking-tight: -1px;
+  --tracking-normal: 0px;
+  --tracking-wide: 1px;
+
+  /* ===========================
+     RADIUS
+  =========================== */
+
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 40px;
+  --radius-full: 999px;
+
+  /* ===========================
+     SHADOWS
+  =========================== */
+
+  --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 20px 70px rgba(0, 0, 0, 0.08);
+
+  /* ===========================
+     CONTAINER
+  =========================== */
+
+  --spacing-container: 1400px;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+@utility scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility container-page {
+  max-width: 1350px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@utility media-container-page {
+  max-width: 1250px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@utility join-container-page {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+@utility container-phone {
+  max-width: 100%;
+  margin-inline: auto;
+  padding-inline: 0.75rem;
+}
+
+@utility flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@utility section-padding {
+  padding-block: 8rem;
+}
+
+@utility transition-default {
+  transition: all 0.3s ease;
+}
+
+@utility heading-display {
+  font-size: clamp(3.6rem, 9.8vw, 6.3rem);
+  line-height: 1.0;
+  letter-spacing: clamp(-0.5px, -0.1vw, 3px);
+  font-weight: 700;
+}
+
+@utility heading-h {
+  font-size: clamp(1.8rem, 4.7vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: clamp(-0.6px, -0.15vw, -2px);
+  font-weight: 600;
+}
+
+@utility heading-h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1;
+  letter-spacing: clamp(-1px, -0.2vw, -3px);
+  font-weight: 700;
+}
+
+@utility heading-h1-2 {
+  font-size: clamp(1.4rem, 3.3vw, 2rem);
+  line-height: 1.08;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+
+@utility heading-h2 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+
+@utility heading-h2-3 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  line-height: 1.08;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+
+@utility heading-h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+
+@utility heading-h4 {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  line-height: 1.1;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+
+@utility heading-h5 {
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.6;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+
+@utility body-text {
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.6;
+  font-weight: 500;
+}
